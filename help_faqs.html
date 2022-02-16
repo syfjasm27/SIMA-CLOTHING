@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sima Faqs</title>
+    <!-- <link rel="icon" href="images/logo.png"> -->
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+   <!-- Main Template css file -->
+   <link rel="stylesheet" href="css/help_faqs.css">
+
+</head>
+<body>
+    <!-- -------------- Start Header -------------- -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>S</span>ima</a>
+        </div>
+      
+   
+
+         <ul class="nav" id="nav">
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="children.html">CHILDREN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+         </ul>
+      
+        <div class="icons">
+            <i class="fas fa-search" onclick="showsearch()"></i>
+            <a href="account.html"><i class="far fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-cart-plus"></i></a>
+        </div>
+
+        <i class="fas fa-times hide" onclick="hidemenu()" id="showclose"></i>
+        <i class="fas fa-bars toggle-menu" onclick="showmenu()"></i>
+
+    </header>
+    <!-- -------------- End Header -------------- -->
+
+    <!-- -------------- Start Landing -------------- -->
+    <section class="landing">
+        <input type="search" name="search"   placeholder="What Are You looking For ?" id="search">
+        <i class="fas fa-times hide" onclick="hidesearch()" id="showclose2"></i>
+        
+        <div class="container">
+            <div class="left">
+                <ul>
+                    <li><a href="#order">ORDER</a></li>
+                    <li><a href="#pay">PAYMENT</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                    <li><a href="#account">MY ACCOUNT</a></li>
+                    <li><a href="#protect">DATA PROTECTION AND SECURITY</a></li>
+                    <li><a href="#returns">RETURNS AND EXCHANGES</a></li>
+                </ul>
+            </div>
+            <div class="right">
+             <h4>Help & FAQS </h4>
+             <div class="order" id="order">
+
+                <h5>Order</h5>
+
+              <div class="order1">
+                 
+                <div class="title"> 
+                    <span>Will i recieve in a order confirmation ?</span>
+                </div>
+                 <p>Upon successful placement of your order, you will receive an automatic acknowledgement 
+                     of receipt via e-mail. In case you did not receive the order confirmation, please 
+                     contact us via the contact form on our website.
+                </p>
+             </div>
+
+             <div class="order1">
+                <div class="title">
+                <span>are the products i select always deliverable ?</span>
+            </div>
+                <p>Usually, only items that are actually available are shown in our AlphaTauri online
+                     shop. Unavailable sizes are shown in grey. Although our database is updated on an
+                      ongoing basis, in exceptional cases, a certain item might be sold out between the product selection and the checkout confirmation. In very rare cases, a product may not be available when we pack your order. If this happens, we will notify you immediately.
+
+               </p>
+            </div>
+
+            <div class="order1">
+                <div class="title">
+                <span>can i order by phone or email ?</span>
+                </div>
+                <p>Please understand that currently we cannot accept orders placed by phone or e-mail. You can order 24/7 in the AlphaTauri online shop.
+
+               </p>
+            </div>
+
+             </div>
+            
+
+
+
+             <div class="order" id="pay">
+
+                <h5>Payment</h5>
+
+              <div class="order1">
+                 
+                <div class="title"> 
+                    <span>what payment option do you have?</span>
+                </div>
+                 <p>Your payment options might differ depending on your country and delivery address. You will find your available options in the payment section of the checkout.
+
+                    Credit cards:
+                    Visa, MasterCard
+                    
+                    PayPal:
+                    In order to be able to use this service you must register with PayPal (free of charge). For more information on PayPal, please click on the following link: www.paypal.com
+                     
+                    Direct eBanking:
+                    - For orders placed in Germany and Austria
+                    - In order to be able to use this service, all you need is an online banking account at your bank and your login data.
+                    - With direct eBanking you will instruct your bank to execute a transfer. 
+                    - No registration necessary
+                    - For more information on direct eBanking, please click here
+                    We protect your sensitive information using SSL encryption (Secure Socket Layer) and the 3D Secure service. All credit card data is transmitted to us in encrypted form.
+                    
+                    Payment on invoice:
+                    - For orders placed in Germany and Austria
+                    - Pay within 14 days of receipt of your order. For this payment method, you will need to supply your date of birth.
+                    - Payments on invoice are processed by Arvato Supply Chain Solutions SE.
+                    
+                    IDEAL:
+                    - For orders placed in the Netherlands.
+                    - In order to be able to use iDEAL you need to be a customer of the participating banks.
+                    - Payments can be done using the mobile banking app or the online banking environment of your own bank
+                </p>
+             </div>
+
+             <div class="order1">
+                <div class="title">
+                <span>where can i find my invoice ?</span>
+            </div>
+                <p>As soon as your order is dispatched, you will receive an e-mail confirmation including the invoice and a tracking code. Should you not receive your invoice, please contact us here.
+               </p>
+            </div>
+
+            
+
+             </div>
+            
+
+             <div class="order" id="contact">
+
+                <h5>Contact Us</h5>
+
+              <div class="order1">
+                 
+                <div class="title"> 
+                    <span>Will i recieve in a order confirmation ?</span>
+                </div>
+                 <p>Upon successful placement of your order, you will receive an automatic acknowledgement 
+                     of receipt via e-mail. In case you did not receive the order confirmation, please 
+                     contact us via the contact form on our website.
+                </p>
+             </div>
+
+             <div class="order1">
+                <div class="title">
+                <span>are the products i select always deliverable ?</span>
+            </div>
+                <p>Usually, only items that are actually available are shown in our AlphaTauri online
+                     shop. Unavailable sizes are shown in grey. Although our database is updated on an
+                      ongoing basis, in exceptional cases, a certain item might be sold out between the product selection and the checkout confirmation. In very rare cases, a product may not be available when we pack your order. If this happens, we will notify you immediately.
+
+               </p>
+            </div>
+
+            <div class="order1">
+                <div class="title">
+                <span>can i order by phone or email ?</span>
+                </div>
+                <p>Please understand that currently we cannot accept orders placed by phone or e-mail. You can order 24/7 in the AlphaTauri online shop.
+
+               </p>
+            </div>
+
+             </div>
+     
+
+             <div class="order" id="account">
+
+                <h5>My Account</h5>
+
+              <div class="order1">
+                 
+                <div class="title"> 
+                    <span>Will i recieve in a order confirmation ?</span>
+                </div>
+                 <p>Upon successful placement of your order, you will receive an automatic acknowledgement 
+                     of receipt via e-mail. In case you did not receive the order confirmation, please 
+                     contact us via the contact form on our website.
+                </p>
+             </div>
+
+             <div class="order1">
+                <div class="title">
+                <span>are the products i select always deliverable ?</span>
+            </div>
+                <p>Usually, only items that are actually available are shown in our AlphaTauri online
+                     shop. Unavailable sizes are shown in grey. Although our database is updated on an
+                      ongoing basis, in exceptional cases, a certain item might be sold out between the product selection and the checkout confirmation. In very rare cases, a product may not be available when we pack your order. If this happens, we will notify you immediately.
+
+               </p>
+            </div>
+
+            <div class="order1">
+                <div class="title">
+                <span>can i order by phone or email ?</span>
+                </div>
+                <p>Please understand that currently we cannot accept orders placed by phone or e-mail. You can order 24/7 in the AlphaTauri online shop.
+
+               </p>
+            </div>
+
+             </div>
+     
+
+             <div class="order" id="protect">
+
+                <h5>Data Protection And Security</h5>
+
+              <div class="order1">
+                 
+                <div class="title"> 
+                    <span>Will i recieve in a order confirmation ?</span>
+                </div>
+                 <p>Upon successful placement of your order, you will receive an automatic acknowledgement 
+                     of receipt via e-mail. In case you did not receive the order confirmation, please 
+                     contact us via the contact form on our website.
+                </p>
+             </div>
+
+             <div class="order1">
+                <div class="title">
+                <span>are the products i select always deliverable ?</span>
+            </div>
+                <p>Usually, only items that are actually available are shown in our AlphaTauri online
+                     shop. Unavailable sizes are shown in grey. Although our database is updated on an
+                      ongoing basis, in exceptional cases, a certain item might be sold out between the product selection and the checkout confirmation. In very rare cases, a product may not be available when we pack your order. If this happens, we will notify you immediately.
+
+               </p>
+            </div>
+
+            <div class="order1">
+                <div class="title">
+                <span>can i order by phone or email ?</span>
+                </div>
+                <p>Please understand that currently we cannot accept orders placed by phone or e-mail. You can order 24/7 in the AlphaTauri online shop.
+
+               </p>
+            </div>
+
+             </div>
+     
+
+             <div class="order" id="returns">
+
+                <h5>Returns And Exchanges</h5>
+
+              <div class="order1">
+                 
+                <div class="title"> 
+                    <span>Will i recieve in a order confirmation ?</span>
+                </div>
+                 <p>Upon successful placement of your order, you will receive an automatic acknowledgement 
+                     of receipt via e-mail. In case you did not receive the order confirmation, please 
+                     contact us via the contact form on our website.
+                </p>
+             </div>
+
+             <div class="order1">
+                <div class="title">
+                <span>are the products i select always deliverable ?</span>
+            </div>
+                <p>Usually, only items that are actually available are shown in our AlphaTauri online
+                     shop. Unavailable sizes are shown in grey. Although our database is updated on an
+                      ongoing basis, in exceptional cases, a certain item might be sold out between the product selection and the checkout confirmation. In very rare cases, a product may not be available when we pack your order. If this happens, we will notify you immediately.
+
+               </p>
+            </div>
+
+            <div class="order1">
+                <div class="title">
+                <span>can i order by phone or email ?</span>
+                </div>
+                <p>Please understand that currently we cannot accept orders placed by phone or e-mail. You can order 24/7 in the AlphaTauri online shop.
+
+               </p>
+            </div>
+
+             </div>
+     
+     
+     
+            </div>
+         </div>
+    </section>
+    <!-- -------------- End Landing -------------- -->
+
+
+
+    <!-- -------------- start footer  -------------- -->
+    <section class="footer">
+        <div class="container">
+        <div class="left">
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="help_faqs.html">HELP & FAQS</a>
+            <a href="">DELIVERY & RETURNS</a>
+        </div>
+
+        <div class="center">
+            <a href="">Terms of Sale </a>
+            <a href="">Terms of Use </a>
+            <a href=""> Privacy & Cookie Policy </a>
+        </div>
+
+        <div class="right">
+            <a href=""> INSTAGRAM   </a>
+            <a href=""> FACEBOOK </a>
+            
+           <p>&copy; <span>S</span>ima 2022 | All Right Reserved.</p>
+        </div>
+
+    </div>
+    </section>
+
+
+
+    <!-- -------------- End footer  -------------- -->
+
+       <!-- ------------------- JavaScript ------------------- -->
+
+       <script>
+        var menunav = document.getElementById("nav");
+        var closeshow = document.getElementById("showclose");
+        var close2show = document.getElementById("showclose2");
+        var searchmid = document.getElementById("search");
+        
+
+        function showmenu(){
+            menunav.style.display = "block";
+            closeshow.style.display = "block";
+        }
+
+        function hidemenu(){
+            menunav.style.display = "none";
+            closeshow.style.display = "none";
+        }
+
+        // -------------------------------  1  --------------//
+
+        function showsearch(){
+            searchmid.style.display = "block";
+            close2show.style.display = "block";
+        }
+
+        function hidesearch(){
+            searchmid.style.display = "none";
+            close2show.style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>

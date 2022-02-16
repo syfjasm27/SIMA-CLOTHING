@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LOGIN OR REGISTRATION</title>
+    <!-- <link rel="icon" href="images/logo.png"> -->
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+   <!-- Main Template css file -->
+   <link rel="stylesheet" href="css/account.css">
+
+</head>
+<body>
+    <!-- -------------- Start Header -------------- -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>S</span>ima</a>
+        </div>
+      
+   
+
+         <ul class="nav" id="nav">
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="children.html">CHILDREN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+         </ul>
+      
+        <div class="icons">
+            <i class="fas fa-search" onclick="showsearch()"></i>
+            <a href="account.html"><i class="far fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-cart-plus"></i></a>
+        </div>
+
+        <i class="fas fa-times hide" onclick="hidemenu()" id="showclose"></i>
+        <i class="fas fa-bars toggle-menu" onclick="showmenu()"></i>
+
+    </header>
+    <!-- -------------- End Header -------------- -->
+
+    <!-- -------------- Start Landing -------------- -->
+    <section class="landing">
+        <input type="search" name="search"   placeholder="What Are You looking For ?" id="search">
+        <i class="fas fa-times hide" onclick="hidesearch()" id="showclose2"></i>
+        <div class="container">
+       <div class="login">
+           <h4>BEEN HERE BEFORE?</h4>
+           <form action="">
+            <label for="">Email address</label>
+            <input type="email" placeholder="email@address.com*" required>
+               <br>
+            <label for="">Password</label>
+            <input type="password" placeholder="Password*" required>
+            <input type="checkbox"> <label for="">Keep me logged-in</label>
+            <input type="submit" value="LOGIN">
+            <a href="forget_pass.html">Forgotten your password?</a>
+            <a href="">Click here to reset it.</a>
+            
+
+           </form>
+       </div>
+       <div class="register">
+        <h4>FIRST TIMER? </h4>
+        <p>Register for an account to securely store multiple addresses and track your orders. Get 
+            the latest news and exclusive offers with the AlphaTauri Shop newsletter.</p>
+        <a href="register.html">Register</a>
+
+
+
+       </div>
+    </div>
+    </section>
+    <!-- -------------- End Landing -------------- -->
+
+
+
+    <!-- -------------- start footer  -------------- -->
+    <section class="footer">
+        <div class="container">
+        <div class="left">
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="help_faqs.html">HELP & FAQS</a>
+            <a href="">DELIVERY & RETURNS</a>
+        </div>
+
+        <div class="center">
+            <a href="">Terms of Sale </a>
+            <a href="">Terms of Use </a>
+            <a href=""> Privacy & Cookie Policy </a>
+        </div>
+
+        <div class="right">
+            <a href=""> INSTAGRAM   </a>
+            <a href=""> FACEBOOK </a>
+            
+           <p>&copy; <span>S</span>ima 2022 | All Right Reserved.</p>
+        </div>
+
+    </div>
+    </section>
+
+
+
+    <!-- -------------- End footer  -------------- -->
+
+       <!-- ------------------- JavaScript ------------------- -->
+
+       <script>
+        var menunav = document.getElementById("nav");
+        var closeshow = document.getElementById("showclose");
+        var close2show = document.getElementById("showclose2");
+        var searchmid = document.getElementById("search");
+        
+
+        function showmenu(){
+            menunav.style.display = "block";
+            closeshow.style.display = "block";
+        }
+
+        function hidemenu(){
+            menunav.style.display = "none";
+            closeshow.style.display = "none";
+        }
+
+        // -------------------------------  1  --------------//
+
+        function showsearch(){
+            searchmid.style.display = "block";
+            close2show.style.display = "block";
+        }
+
+        function hidesearch(){
+            searchmid.style.display = "none";
+            close2show.style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>

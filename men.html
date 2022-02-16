@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sima | Official Online Store</title>
+    <!-- <link rel="icon" href="images/logo.png"> -->
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+   <!-- Main Template css file -->
+   <link rel="stylesheet" href="css/men.css">
+
+</head>
+<body>
+    <!-- -------------- Start Header -------------- -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>S</span>ima</a>
+        </div>
+      
+   
+
+         <ul class="nav" id="nav">
+                <li><a href="men.html" class="active">MEN</a></li>
+                <li><a href="women.html">WOMEN</a></li>
+                <li><a href="children.html">CHILDREN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+         </ul>
+      
+        <div class="icons">
+            <i class="fas fa-search" onclick="showsearch()"></i>
+            <a href="account.html"><i class="far fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-cart-plus"></i></a>
+        </div>
+
+        <i class="fas fa-times hide" onclick="hidemenu()" id="showclose"></i>
+        <i class="fas fa-bars toggle-menu" onclick="showmenu()"></i>
+
+    </header>
+    <!-- -------------- End Header -------------- -->
+
+    <!-- -------------- Start Landing -------------- -->
+    <section class="landing">
+        <input type="search" name="search"   placeholder="What Are You looking For ?" id="search">
+        <i class="fas fa-times hide" onclick="hidesearch()" id="showclose2"></i>
+    
+        <div class="men">
+            <h4>MEN</h4>
+            <p> <span>Hello</span> You will find what you like from men's clothes</p>
+            
+        </div>
+
+    </section>
+    <!-- -------------- End Landing -------------- -->
+
+
+
+    <!-- -------------- Start  filter -------------- -->
+    <section class="filter">
+        <div class="container">
+            <div class="colour" onclick="showcolor()">
+                <p>COLOUR <span>^</span></p>
+            </div>
+
+            <div class="size"  onclick="showsize()">
+                <p>SIZE <span>^</span></p>
+            </div>
+
+            <div class="features" onclick="showfeature()">
+                <p>FEATURES <span>^</span></p>
+            </div>
+        </div>
+
+        <div class="sub-colour" id="subcolor">
+            <div class="parent-hide" onclick="hidefilterc()" id="showfilterc">
+                <i class="fas fa-times hide" ></i>
+            </div>
+            <div class="container">
+                <div>
+                    <input type="checkbox" checked> 
+                    <label for="">SHOW ALL COLOUR</label>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul>
+                    <li><input type="checkbox" id="red"><label for="red">RED</label></li>
+                    <li><input type="checkbox" id="blue"><label for="blue">BLUE</label></li>
+                    <li><input type="checkbox" id="black"><label for="black">BLACK</label></li>
+                    <li><input type="checkbox" id="yellow"><label for="yellow">YELLOW</label></li>
+                    <li><input type="checkbox" id="gray"><label for="gray">GRAY</label></li>
+                    <li><input type="checkbox" id="orange"><label for="orange">ORANGE</label></li>
+                    
+                </ul>
+
+                <ul>
+                    <li><input type="checkbox" id="white"><label for="white">WHITE</label></li>
+                    <li><input type="checkbox" id="brown"><label for="brown">BROWN</label></li>
+                    <li><input type="checkbox" id="green"><label for="green">GREEN</label></li>
+                    
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        
+        <div class="sub-size" id="subsize">
+            <div class="parent-hide" onclick="hidefilters()" id="showfilters">
+                <i class="fas fa-times hide" ></i>
+            </div>
+            <div class="container">
+                <div>
+                    <input type="checkbox" checked> 
+                    <label for="">SHOW ALL SIZES</label>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul>
+                    <li><input type="checkbox" id="red1"><label for="red1">85</label></li>
+                    <li><input type="checkbox" id="blue1"><label for="blue1">105</label></li>
+                    <li><input type="checkbox" id="black1"><label for="black1">115</label></li>
+                    <li><input type="checkbox" id="yellow1"><label for="yellow1">XXS</label></li>
+                    <li><input type="checkbox" id="gray1"><label for="gray1">XS</label></li>
+                    <li><input type="checkbox" id="orange1"><label for="orange1">XL</label></li>
+                    
+                </ul>
+
+                <ul>
+                    <li><input type="checkbox" id="white1"><label for="white1">S</label></li>
+                    <li><input type="checkbox" id="brown1"><label for="brown1">M</label></li>
+                    <li><input type="checkbox" id="green1"><label for="green1">L</label></li>
+                    
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <div class="sub-feature" id="subfeature">
+            <div class="parent-hide" onclick="hidefilterf()" id="showfilterf">
+                <i class="fas fa-times hide" ></i>
+            </div>
+            <div class="container">
+                <div>
+                    <input type="checkbox" checked> 
+                    <label for="">SHOW ALL FEATURES</label>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul>
+                    <li><input type="checkbox" id="red2"><label for="red2">MADE IN EUROPE</label></li>
+                    <li><input type="checkbox" id="blue2"><label for="blue2">WATER RESISTANT</label></li>
+                    <li><input type="checkbox" id="black2"><label for="black2">3D KNIT</label></li>
+                    <li><input type="checkbox" id="yellow2"><label for="yellow2">WATERPROOF</label></li>
+                    <li><input type="checkbox" id="gray2"><label for="gray2">SUSTAINABLE</label></li>
+                    <li><input type="checkbox" id="orange2"><label for="orange2">EASY CARE</label></li>
+                    
+                </ul>
+
+                <ul>
+                    <li><input type="checkbox" id="white2"><label for="white2">REVERSIBLE</label></li>
+                    <li><input type="checkbox" id="brown2"><label for="brown2">LIGHTWEIGHT</label></li>
+                    <li><input type="checkbox" id="green2"><label for="green2">MOTION FIT</label></li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- -------------- End filter -------------- -->
+
+
+
+
+    <!-- -------------- start images -------------- -->
+    <section class="imageman">
+
+        <div class="subimage">
+            <div>
+                <div class="img">
+                <img src="images/m1.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m2.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m3.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m4.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="subimage">
+            <div>
+                <div class="img">
+                <img src="images/m5.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m6.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m7.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m8.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+        </div>
+
+
+        
+        <div class="subimage">
+            <div>
+                <div class="img">
+                <img src="images/m9.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m10.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m11.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m12.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="subimage">
+            <div>
+                <div class="img">
+                <img src="images/m13.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m14.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/m15.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+
+            <div>
+                <div class="img">
+                <img src="images/man1.jpg" alt="">
+               </div>
+               <h5>Facas v1.y6.01</h5>
+               <p>Water-repellent Milano Rib Knit Jacket</p>
+               <span>$200.00</span>
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+    <!-- -------------- End images -------------- -->
+
+
+    <!-- -------------- start footer  -------------- -->
+    <section class="footer">
+        <div class="container">
+        <div class="left">
+            <a href="contact_us.html">CONTACT US</a>
+            <a href="help_faqs.html">HELP & FAQS</a>
+            <a href="">DELIVERY & RETURNS</a>
+        </div>
+
+        <div class="center">
+            <a href="">Terms of Sale </a>
+            <a href="">Terms of Use </a>
+            <a href=""> Privacy & Cookie Policy </a>
+        </div>
+
+        <div class="right">
+            <a href=""> INSTAGRAM   </a>
+            <a href=""> FACEBOOK </a>
+            
+           <p>&copy; <span>S</span>ima 2022 | All Right Reserved.</p>
+        </div>
+
+    </div>
+    </section>
+
+
+
+    <!-- -------------- End footer  -------------- -->
+
+
+
+
+       <!-- ------------------- JavaScript ------------------- -->
+
+       <script>
+        var menunav = document.getElementById("nav");
+        var closeshow = document.getElementById("showclose");
+        var close2show = document.getElementById("showclose2");
+        var searchmid = document.getElementById("search");
+        var subcolor1 = document.getElementById("subcolor");
+        var subsize1 = document.getElementById("subsize");
+        var subfeature1 = document.getElementById("subfeature");
+        
+
+        function showmenu(){
+            menunav.style.display = "block";
+            closeshow.style.display = "block";
+        }
+
+        function hidemenu(){
+            menunav.style.display = "none";
+            closeshow.style.display = "none";
+        }
+
+        // -------------------------------  1  --------------//
+
+        function showsearch(){
+            searchmid.style.display = "block";
+            close2show.style.display = "block";
+        }
+
+        function hidesearch(){
+            searchmid.style.display = "none";
+            close2show.style.display = "none";
+        }
+
+        function showcolor(){
+            subcolor1.style.display = "block";
+            // close2show.style.display = "block";
+        }
+
+        function showsize(){
+            subsize1.style.display = "block";
+            // close2show.style.display = "block";
+        }
+
+        function showfeature(){
+            subfeature1.style.display = "block";
+            // close2show.style.display = "block";
+        }
+
+        function hidefilterc(){
+            subcolor1.style.display = "none";
+
+        }
+
+        function hidefilters(){
+            subsize1.style.display = "none";
+
+        }
+
+        function hidefilterf(){
+            subfeature1.style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+</html>
